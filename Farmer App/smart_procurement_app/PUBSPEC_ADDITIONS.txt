@@ -1,0 +1,9 @@
+Add these dependencies to the existing pubspec.yaml under dependencies:
+
+google_maps_flutter: ^2.13.1
+url_launcher: ^6.3.2
+
+Then run:
+flutter pub get
+
+Do not replace your existing pubspec.yaml wholesale unless you prefer to merge these two lines manually.

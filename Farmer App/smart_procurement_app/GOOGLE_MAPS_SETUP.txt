@@ -1,0 +1,14 @@
+Google Maps setup (one-time):
+
+1. Enable Maps SDK for Android in your Google Cloud project.
+2. Create an API key restricted to the Android app.
+3. Add this inside android/app/src/main/AndroidManifest.xml, inside <application>:
+
+<meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+4. Replace YOUR_GOOGLE_MAPS_API_KEY with your key.
+5. Run flutter pub get and then flutter run.
+
+The app will still compile without the key, but the embedded Google map will not display until the key is configured.
